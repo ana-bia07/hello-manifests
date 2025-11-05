@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-fastapi
+  labels:
+    app: app-fastapi
+spec:
+  replicas: 1
+  template:
+    matadata:
+      labels:
+        app: app-fastapi
+    spec:
+      containers:
+        - name: app-fastapi
+          image: anabeatriz02/main-python:c23a50a6657ca75d2f9afc6d5eb444732a67088d
+          port:
+          - containerPort: 80
+  selector:
+    matchLabels:
+      app: app-fastapi
+    
