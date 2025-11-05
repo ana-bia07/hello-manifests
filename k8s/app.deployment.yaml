@@ -10,7 +10,7 @@ spec:
     matchLabels:
       app: app-fastapi
   template:
-    matadata:
+    metadata:
       labels:
         app: app-fastapi
     spec:
