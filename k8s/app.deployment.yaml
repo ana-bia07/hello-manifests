@@ -6,6 +6,9 @@ metadata:
     app: app-fastapi
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: app-fastapi
   template:
     matadata:
       labels:
@@ -14,9 +17,7 @@ spec:
       containers:
         - name: app-fastapi
           image: anabeatriz02/main-python:c23a50a6657ca75d2f9afc6d5eb444732a67088d
-          port:
+          ports:
           - containerPort: 80
-  selector:
-    matchLabels:
-      app: app-fastapi
+  
     
