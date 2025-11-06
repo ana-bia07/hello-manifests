@@ -36,5 +36,5 @@ spec:
   - name: "app-fastapi-service"
     port: 8080
     targetPort: 80
-    NodePort: 30000
+    nodePort: 30000
     
