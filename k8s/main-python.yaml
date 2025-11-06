@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app-fastapi
-          image: anabeatriz02/main-python:044bfc63b8fa04dd9f776041c4df3b9592914747
+          image: anabeatriz02/main-python:ca0f9a89e67368bdb6f3215c170e691ad2573451
           ports:
           - containerPort: 80
 
