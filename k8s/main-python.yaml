@@ -16,7 +16,7 @@ spec: # Especificação do Deployment
   spec: # Especificação do Pod
     containers: # Lista de contêineres no Pod
       - name: app-fastapi # Nome do contêiner
-        image: anabeatriz02/main-python:81fd3511e0c6dabc901be096b4324dfd5904eec5 # Imagem Docker Hub
+        image: anabeatriz02/main-python:4561d71182162a4e6bd21c0c6272210a5492911a
         ports: # Portas que o contêiner expõe
           - containerPort: 80 # A aplicação ouve na porta 80
 
