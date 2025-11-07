@@ -13,12 +13,12 @@ spec: # Especificação do Deployment
     metadata:
       labels: 
         app: app-fastapi # Rótulo app: app-fastapi (para ser selecionado)
-    spec: # Especificação do Pod
-      containers: # Lista de contêineres no Pod
-        - name: app-fastapi # Nome do contêiner
-          image: anabeatriz02/main-python:81fd3511e0c6dabc901be096b4324dfd5904eec5 # Imagem Docker Hub
-          ports: # Portas que o contêiner expõe
-            - containerPort: 80 # A aplicação ouve na porta 80
+  spec: # Especificação do Pod
+    containers: # Lista de contêineres no Pod
+      - name: app-fastapi # Nome do contêiner
+        image: anabeatriz02/main-python:81fd3511e0c6dabc901be096b4324dfd5904eec5 # Imagem Docker Hub
+        ports: # Portas que o contêiner expõe
+          - containerPort: 80 # A aplicação ouve na porta 80
 
 --- # Separador de documentos YAML (próximo recurso)
 
